@@ -1,11 +1,8 @@
 import { Toast, toaster } from '@kobalte/core';
 import { A } from 'solid-start';
 import Counter from '~/components/Counter';
-import { api } from '~/utils/api';
 
 export default function Home() {
-  const hello = api.example.hello.useQuery(() => 'World');
-
   const showToast = () => {
     toaster.show((props) => (
       <Toast.Root
@@ -37,10 +34,6 @@ export default function Home() {
       <h1 class="max-6-xs my-16 text-6xl font-thin uppercase text-primary-700">
         Hello world!
       </h1>
-
-      <pre>
-        <code>{JSON.stringify(hello.data, null, 2)}</code>
-      </pre>
 
       <button onClick={showToast}>show toast</button>
 

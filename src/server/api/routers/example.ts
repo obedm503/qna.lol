@@ -1,8 +1,8 @@
-import { object, string } from 'valibot';
+import { object, number } from 'valibot';
 import { createTRPCRouter, publicProcedure } from '../utils';
 
 export const exampleRouter = createTRPCRouter({
-  hello: publicProcedure.input(string()).query(({ input }) => {
-    return `Hello ${input}!`;
+  double: publicProcedure.input(number()).query(({ input }) => {
+    return input * 2;
   }),
 });
