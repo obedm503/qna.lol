@@ -38,7 +38,7 @@ export default function Home() {
       <button onClick={showToast}>show toast</button>
 
       <Counter />
-      
+
       <p class="mt-8">
         Visit{' '}
         <a

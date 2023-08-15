@@ -51,7 +51,7 @@ export default function Root() {
 
               <Portal>
                 <Toast.Region>
-                  <Toast.List class="toast__list fixed right-0 bottom-0 z-50 m-0 flex w-96 max-w-[100vw] list-none flex-col gap-2 p-4 outline-none" />
+                  <Toast.List class="toast__list fixed bottom-0 right-0 z-50 m-0 flex w-96 max-w-[100vw] list-none flex-col gap-2 p-4 outline-none" />
                 </Toast.Region>
               </Portal>
             </ErrorBoundary>
